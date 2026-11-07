@@ -1,0 +1,128 @@
+[
+  {
+    "id": "easy-1",
+    "prompt": "What is the capital of France?",
+    "expected": "easy",
+    "category": "factual",
+    "trap": null
+  },
+  {
+    "id": "easy-2",
+    "prompt": "Translate 'hello' to Spanish",
+    "expected": "easy",
+    "category": "translation",
+    "trap": null
+  },
+  {
+    "id": "easy-3",
+    "prompt": "What color is the sky?",
+    "expected": "easy",
+    "category": "factual",
+    "trap": null
+  },
+  {
+    "id": "easy-4",
+    "prompt": "List the days of the week",
+    "expected": "easy",
+    "category": "listing",
+    "trap": null
+  },
+  {
+    "id": "easy-5",
+    "prompt": "Who is Albert Einstein?",
+    "expected": "easy",
+    "category": "factual",
+    "trap": null
+  },
+  {
+    "id": "hard-1",
+    "prompt": "Design a distributed cache system that handles cache invalidation across multiple data centers. Compare eventual consistency vs strong consistency approaches. What are the trade-offs?",
+    "expected": "hard",
+    "category": "system-design",
+    "trap": null
+  },
+  {
+    "id": "hard-2",
+    "prompt": "Analyze this code for race conditions and suggest fixes:\n```python\nclass Counter:\n    def __init__(self):\n        self.count = 0\n    def increment(self):\n        temp = self.count\n        self.count = temp + 1\n```\nExplain step by step why this fails under concurrent access.",
+    "expected": "hard",
+    "category": "debugging",
+    "trap": null
+  },
+  {
+    "id": "hard-3",
+    "prompt": "Prove that the halting problem is undecidable using a diagonalization argument. Then explain why this matters for static analysis tools.",
+    "expected": "hard",
+    "category": "theory",
+    "trap": null
+  },
+  {
+    "id": "hard-4",
+    "prompt": "Implement a B+ tree insertion algorithm that handles node splitting correctly. Compare its performance characteristics with a red-black tree for database indexing.",
+    "expected": "hard",
+    "category": "algorithm",
+    "trap": null
+  },
+  {
+    "id": "hard-5",
+    "prompt": "Evaluate the security implications of using JWT tokens for session management versus server-side sessions with Redis. Consider token revocation, XSS, CSRF, and scalability trade-offs.",
+    "expected": "hard",
+    "category": "security",
+    "trap": null
+  },
+  {
+    "id": "trap-short-hard-1",
+    "prompt": "Prove P ≠ NP.",
+    "expected": "hard",
+    "category": "theory",
+    "trap": "short-but-hard"
+  },
+  {
+    "id": "trap-short-hard-2",
+    "prompt": "Debug this race condition.",
+    "expected": "hard",
+    "category": "debugging",
+    "trap": "short-but-hard"
+  },
+  {
+    "id": "trap-short-hard-3",
+    "prompt": "Derive the backpropagation algorithm.",
+    "expected": "hard",
+    "category": "math",
+    "trap": "short-but-hard"
+  },
+  {
+    "id": "trap-short-hard-4",
+    "prompt": "Optimize this O(n³) algorithm to O(n log n).",
+    "expected": "hard",
+    "category": "algorithm",
+    "trap": "short-but-hard"
+  },
+  {
+    "id": "trap-long-easy-1",
+    "prompt": "I have a very long document here that I need you to read through carefully. It is a recipe for chocolate chip cookies. The ingredients are: 2 and 1/4 cups all-purpose flour, 1 teaspoon baking soda, 1 teaspoon salt, 1 cup (2 sticks) butter softened, 3/4 cup granulated sugar, 3/4 cup packed brown sugar, 1 teaspoon vanilla extract, 2 large eggs, 2 cups chocolate chips. What is the first ingredient listed?",
+    "expected": "easy",
+    "category": "reading",
+    "trap": "long-but-easy"
+  },
+  {
+    "id": "trap-long-easy-2",
+    "prompt": "Here is a long passage about the history of computing: Charles Babbage conceived the first mechanical computer in the early 19th century. Ada Lovelace wrote the first algorithm. Alan Turing formalized computation. John von Neumann designed stored-program architecture. Grace Hopper developed the first compiler. Dennis Ritchie created the C programming language. Tim Berners-Lee invented the World Wide Web. Linus Torvalds created Linux. Larry Page and Sergey Brin founded Google. Steve Jobs co-founded Apple. What year did Tim Berners-Lee invent the World Wide Web? Just give me the year.",
+    "expected": "easy",
+    "category": "reading",
+    "trap": "long-but-easy"
+  },
+  {
+    "id": "trap-long-easy-3",
+    "prompt": "I'm going to give you a really detailed description of my cat. She is orange and white, about 10 pounds, has green eyes, loves to sleep on the windowsill, enjoys tuna treats, is afraid of the vacuum cleaner, was adopted from a shelter three years ago, her name is Whiskers, she is an indoor cat, she has been spayed, she is up to date on vaccinations, and she recently went to the vet for a checkup. What is my cat's name?",
+    "expected": "easy",
+    "category": "reading",
+    "trap": "long-but-easy"
+  },
+  {
+    "id": "trap-long-easy-4",
+    "prompt": "The following is a detailed list of countries in Europe: France, Germany, Italy, Spain, Portugal, Netherlands, Belgium, Luxembourg, Austria, Switzerland, Greece, Sweden, Norway, Denmark, Finland, Iceland, Ireland, United Kingdom, Poland, Czech Republic, Slovakia, Hungary, Romania, Bulgaria, Croatia, Slovenia, Estonia, Latvia, Lithuania, Malta, Cyprus. How many countries did I list? Just count them.",
+    "expected": "easy",
+    "category": "counting",
+    "trap": "long-but-easy"
+  }
+]

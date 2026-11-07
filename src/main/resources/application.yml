@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: prism-gateway
+
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/prism
+    username: prism
+    password: prism
+
+  flyway:
+    enabled: true
+    url: jdbc:mysql://localhost:3306/prism
+    user: prism
+    password: prism
+    locations: classpath:db/migration
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+prism:
+  providers:
+    timeout:
+      connect-ms: 5000
+      first-byte-ms: 10000
+      total-ms: 30000
+    retry:
+      max-attempts: 3
+      initial-delay-ms: 500
+      max-delay-ms: 5000
+  cache:
+    similarity-threshold: 0.92
+    ttl-minutes: 60
+    max-entries-per-key: 100
+  budget:
+    reservation-ttl-seconds: 120
+  openrouter:
+    api-key: ${OPENROUTER_API_KEY:}
+    base-url: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1}

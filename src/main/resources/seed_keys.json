@@ -1,0 +1,45 @@
+[
+  {
+    "key": "sk-prism-demo-alpha-001",
+    "name": "alpha-team",
+    "team": "Alpha",
+    "modelAllowlist": [
+      "fast",
+      "smart",
+      "auto",
+      "gpt",
+      "claude",
+      "gemini",
+      "llama"
+    ],
+    "rpmLimit": 30,
+    "monthlyBudgetUsd": 10.00
+  },
+  {
+    "key": "sk-prism-demo-beta-002",
+    "name": "beta-team",
+    "team": "Beta",
+    "modelAllowlist": [
+      "fast",
+      "gpt"
+    ],
+    "rpmLimit": 10,
+    "monthlyBudgetUsd": 5.00
+  },
+  {
+    "key": "sk-prism-demo-gamma-003",
+    "name": "gamma-team",
+    "team": "Gamma",
+    "modelAllowlist": [
+      "fast",
+      "smart",
+      "auto",
+      "gpt",
+      "claude",
+      "gemini",
+      "llama"
+    ],
+    "rpmLimit": 60,
+    "monthlyBudgetUsd": 50.00
+  }
+]

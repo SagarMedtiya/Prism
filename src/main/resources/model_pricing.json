@@ -1,0 +1,47 @@
+{
+    "mock-fast-v1": {
+        "provider": "mock-provider-a",
+        "inputPricePerMillionTokens": 0.15,
+        "outputPricePerMillionTokens": 0.60
+    },
+    "mock-smart-v1": {
+        "provider": "mock-provider-b",
+        "inputPricePerMillionTokens": 5.00,
+        "outputPricePerMillionTokens": 15.00
+    },
+    "mock-fast-v2": {
+        "provider": "mock-provider-b",
+        "inputPricePerMillionTokens": 0.25,
+        "outputPricePerMillionTokens": 1.00
+    },
+    "mock-smart-v2": {
+        "provider": "mock-provider-a",
+        "inputPricePerMillionTokens": 3.00,
+        "outputPricePerMillionTokens": 12.00
+    },
+    "openai/gpt-4o-mini": {
+        "provider": "openrouter",
+        "inputPricePerMillionTokens": 0.15,
+        "outputPricePerMillionTokens": 0.60
+    },
+    "openai/gpt-4o": {
+        "provider": "openrouter",
+        "inputPricePerMillionTokens": 2.50,
+        "outputPricePerMillionTokens": 10.00
+    },
+    "anthropic/claude-sonnet-4": {
+        "provider": "openrouter",
+        "inputPricePerMillionTokens": 3.00,
+        "outputPricePerMillionTokens": 15.00
+    },
+    "google/gemini-2.0-flash-001": {
+        "provider": "openrouter",
+        "inputPricePerMillionTokens": 0.10,
+        "outputPricePerMillionTokens": 0.40
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+        "provider": "openrouter",
+        "inputPricePerMillionTokens": 0.59,
+        "outputPricePerMillionTokens": 0.79
+    }
+}
